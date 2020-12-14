@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisayang</title>
+</head>
+<body>
+    <button type="button" id="btn">Click Me</button>
+</body>
+<script src="dist/sweetalert2.all.min.js"></script>
+<script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function(){
+        Swal.fire({
+  title: 'AZKA SAYANG BANGET SAMA AMEL',
+  width: 600,
+  padding: '3em',
+  background: '#fff url(/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+    });
+</script>
+</html>
